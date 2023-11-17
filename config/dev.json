@@ -1,0 +1,3 @@
+{
+    "mongoUri": "mongodb+srv://alex:alex@cluster0.gxf3a8c.mongodb.net/TrainingASII?retryWrites=true&w=majority&appName=AtlasApp"
+}
