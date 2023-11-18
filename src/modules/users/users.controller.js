@@ -9,6 +9,7 @@ const getAllUsers = (req, res) => {
 const createNewUser = async (req, res) => {
   try {
     const response = await userService.createNewUser(req, res);
+    response.save();
     return res.status(StatusCodes.OK).send({
       success: true,
       message: "Succesfully created new user",
