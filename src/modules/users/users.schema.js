@@ -24,7 +24,7 @@ const UserSchema = new Schema(
       require: true,
     },
   },
-  { colletion: "users" }
+  { collection: "users" }
 );
 
 module.exports = model("users", UserSchema);

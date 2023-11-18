@@ -1,8 +1,11 @@
 const { StatusCodes } = require("http-status-codes");
 const userService = require("./user.service");
-const getAllUsers = (req, res) => {
+const usersSchema = require("./users.schema");
+const getAllUsers = async (req, res) => {
+  const users = await usersSchema.find();
   return res.status(StatusCodes.OK).send({
     success: true,
+    users,
   });
 };
 
